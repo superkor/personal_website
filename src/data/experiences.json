@@ -1,0 +1,97 @@
+[
+    {
+        "title": "Undergraduate Research Assistant",
+        "subtitle": "Wireless Sensors & Devices Lab at the University of Waterloo",
+        "start": "May 2024",
+        "end": "April 2026",
+        "location": "Waterloo, Canada",
+        "info": [
+            "Developed a scalable Python-based multi-radar signal processing system for synchronized acquisition and visualization of Infineon BTG60TR13C mmWave data, integrated into a non-invasive glucose monitoring prototype; Presented at IEEE AP-S/URSI 2025 Conference",
+            "Built an multi-mmWave radar based fall detection system with Luneburg Lens for expanded coverage and accuracy; optimized power and processing. Achieved 3rd place globally in IEEE AP-S Student Design Competition",
+            "Refactored and optimized radar data analysis program by successfully converting a Python-based radar analysis program to C++ using TensorFlow C and xTensor, achieving at least a 50% reduction in execution time and significantly improving computational efficiency",
+            "Developed a 5G-enabled leak sensor by configuring 5G band locking with AT commands on a Nordic Thingy:91 microcontroller and reviewing C starter code for system integration",
+            "Expanded on the original Python multi-radar project by implementing UDP server on Infineon XENSIV microcontroller to wirelessly send radar data to a PC using C++ and Python, allowing for low-cost deployment of radar sensors in LTC homes"
+        ],
+        "image": "logos/uw.png",
+        "company_url": "https://uwaterloo.ca/wireless-sensors-and-devices-lab/"
+    },
+    {
+        "title": "Full Stack Software Developer",
+        "subtitle": "StackAdapt",
+        "start": "September 2025",
+        "end": "December 2025",
+        "location": "Toronto, Canada",
+        "info": [
+            "Built and shipped Bulk Actions v2, a spreadsheet-based bulk editing system for campaigns, flights, and creatives (images/videos) using React (TypeScript) and Ruby with GraphQL, including an input assistant tool to copy/apply values across edits for improved efficiency",
+            "Led design and implementation of multi-goal campaigns, adding support for Min CPA, Min CPC, and Max CTR, enabling advertisers to optimize spend across platforms with greater control",
+            "Played a key role in delivering Bulk Actions v2 to 100% of users on schedule, recovering a delayed project and ensuring an on-time full rollout"
+        ],
+        "image": "logos/stackadapt.png",
+        "company_url": "https://www.stackadapt.com/"
+    },
+    {
+        "title": "Software Developer",
+        "subtitle": "ON Semiconductors (Onsemi)",
+        "start": "January 2025",
+        "end": "April 2025",
+        "location": "Toronto, Canada",
+        "info": [
+            "Designed a multistage Natural Language Processing pipeline in Python TensorFlow and diffusion-based generative models to automate test set creation via Natural Language Generation, leveraging DAG-based test structure generation and latent-space modeling to automate test creation leading to rising of development efficiency",
+            "Engineered high-performance backend Python packages to abstract automated test infrastructure, enabling dynamic test creation, execution and reporting via a unified API and CLI, allowing for modular integration of testing frameworks and Jira reporting—resulting in a >6x performance boost and improved test reliability",
+            "Conceptualized Python test frameworks to validate Bluetooth and audio stacks across FPGA/eval boards, ensuring coverage of pairing, streaming, and codec functionality via requirements and C++ code coverage"
+        ],
+        "image": "logos/onsemi.png",
+        "company_url": "https://www.onsemi.com/"
+    },
+    {
+        "title": "Software Developer",
+        "subtitle": "Imagine Communications",
+        "start": "January 2024",
+        "end": "April 2024",
+        "location": "Toronto, Canada",
+        "info": [
+            "Created a robust E2E automation Python framework to integrate Selenium and WinAppDriver to validate complex UI workflows in Windows-based applications, reducing test times by >50% and increasing test reliability >75%",
+            "Integrated test automation into Jenkins pipelines, modernizing the test ecosystem and doubling test visibility via improved reporting and dashboarding tools"
+        ],
+        "image": "logos/imagine_communications.png",
+        "company_url": "https://imaginecommunications.com/"
+    },
+    {
+        "title": "Full Stack Software Developer",
+        "subtitle": "Consolidated Fastfrate",
+        "start": "May 2023",
+        "end": "August 2023",
+        "location": "Vaughan, Canada",
+        "info": [
+            "Built a secure full-stack shipment tracking mobile web application using Angular, .NET, and MS SQL by implementing JWT-based auth, and input validation for enterprise-scale logistics",
+            "Created a backend service in C# and MS SQL database with REST API communication interfaces to enable real time notifications, authentication, and shipment and driver tracking"
+        ],
+        "image": "logos/fastfrate.png",
+        "company_url": "https://fastfrate.com/"
+    },
+    {
+        "title": "QA Developer",
+        "subtitle": "Super (formerly Snapcommerce)",
+        "start": "September 2022",
+        "end": "December 2022",
+        "location": "Toronto, Canada",
+        "info": [
+            "Recipient of Super's Intern Exceeds Expectations Award for exceeding performance expectations",
+            "Performed regression and manual front-end testing on multiple platforms (Windows, MacOS, iOS, Android) prior to code deploys by testing edge cases not covered by automated tests or program requirements"
+        ],
+        "image": "logos/super.png",
+        "company_url": "https://super.com/"
+    },
+    {
+        "title": "Network Support Technician",
+        "subtitle": "University of Waterloo",
+        "start": "January 2022",
+        "end": "April 2022",
+        "location": "Waterloo, Canada",
+        "info": [
+            "Surveyed and modelled Wi-Fi coverage patterns around campus to optimize access point placement using Ekahau Pro, increasing wireless connectivity and reliability by up to 60%"
+        ],
+        "image": "logos/uw.png",
+        "company_url": "https://uwaterloo.ca/"
+    }
+]

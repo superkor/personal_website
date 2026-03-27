@@ -1,79 +1,50 @@
-import React from 'react';
-
-const experiences = [
-    {
-        title: "Undergraduate Research Assistant",
-        subtitle: "Wireless Sensors & Devices Lab at the University of Waterloo",
-        start: "May 2024",
-        end: "April 2026",
-        location: "Waterloo, Canada",
-        info: []
-    },
-    {
-        title: "Full Stack Software Developer",
-        subtitle: "StackAdapt",
-        start: "September 2025",
-        end: "December 2025",
-        location: "Toronto, Canada",
-        info: []
-    },
-    {
-        title: "Software Developer",
-        subtitle: "ON Semiconductors (Onsemi)",
-        start: "January 2025",
-        end: "April 2025",
-        location: "Toronto, Canada",
-        info: []
-    },
-    {
-        title: "Software Developer",
-        subtitle: "Imagine Communications",
-        start: "January 2024",
-        end: "April 2024",
-        location: "Toronto, Canada",
-        info: []
-    },
-    {
-        title: "Full Stack Software Developer",
-        subtitle: "Consolidated Fastfrate",
-        start: "May 2023",
-        end: "August 2023",
-        location: "Vaughan, Canada",
-        info: []
-    },
-    {
-        title: "QA Developer",
-        subtitle: "Super (formerly Snapcommerce)",
-        start: "September 2022",
-        end: "December 2022",
-        location: "Toronto, Canada",
-        info: []
-    },
-    {
-        title: "Network Support Technician",
-        subtitle: "University of Waterloo",
-        start: "January 2022",
-        end: "April 2022",
-        location: "Waterloo, Canada",
-        info: []
-    },
-]
+import React, { useState } from 'react';
+import experiences from '../data/experiences.json'
 
 function Experience(){
+    const [flipped, setFlipped] = useState(Array(experiences.length).fill(false));
+
     return(
         <section>
             <h2>Experiences</h2>
+            <div class="container-div">
+                <p>Click an experience to see more details!</p>
+            </div>
             <div className="project-grid">
-            {experiences.map((project, i) => (
+            {experiences.map((experience, i) => (
             <article
                 key={i}
                 className="project-tile"
-                style={{ backgroundImage: `linear-gradient(rgba(8,15,30,0.45), rgba(8,15,30,0.45)), url(${project.image})` }}
+                onClick={() => {
+                    const newFlipped = [...flipped];
+                    newFlipped[i] = !newFlipped[i];
+                    setFlipped(newFlipped);
+                }}
             >
-                <div className="project-meta">
-                <h3>{project.title}</h3>
-                <p>{project.subtitle}</p>
-                <p>{project.start} &ndash; {project.end}</p>
+                <div className={`project-inner ${flipped[i] ? 'flipped' : ''}`}>
+                    <div
+                        className="project-front"
+                        style={{ backgroundImage: `linear-gradient(rgba(8,15,30,0.45), rgba(8,15,30,0.45)), url(${experience.image})` }}
+                    >
+                        <div className="project-meta">
+                            <h3>{experience.title}</h3>
+                            <a href={experience.company_url}>{experience.subtitle}</a>
+                            <p>{experience.start} &ndash; {experience.end}</p>
+                        </div>
+                    </div>
+                    <div className="project-back">
+                        <div className="project-back-inner">
+                            {experience.info && experience.info.length > 0 ? (
+                                <ul>
+                                    {experience.info.map((item, idx) => (
+                                        <li key={idx}>{item}</li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p style={{ color: '#cbd5e1', textAlign: 'center', margin: 0 }}>No details available.</p>
+                            )}
+                        </div>
+                    </div>
                 </div>
             </article>
             ))}

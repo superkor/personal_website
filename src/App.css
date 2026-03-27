@@ -163,31 +163,108 @@ section p {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 1rem;
+  perspective: 1000px;
 }
 
 .project-tile {
   min-height: 250px;
-  background-position: center;
-  background-size: cover;
   border-radius: 1rem;
   border: 1px solid rgba(148, 163, 184, 0.25);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
   overflow: hidden;
-  display: flex;
-  align-items: flex-end;
   position: relative;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 
-.project-tile:hover {
+.project-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+  position: relative;
+}
+
+.project-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.project-tile:hover .project-inner:not(.flipped) {
   transform: translateY(-8px);
   filter: contrast(1.05);
 }
+
+.project-front,
+.project-back {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.project-front {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.project-back {
+  background: #0f172a;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.project-back-inner {
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.project-back ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #f8fafc;
+}
+
+.project-back li {
+  margin-bottom: 0.45rem;
+  color: #f8fafc;
+}
+
+
+.project-back ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #f8fafc;
+}
+
+.project-back li {
+  margin-bottom: 0.45rem;
+  color: #f8fafc;
+}
+
+
 
 .project-meta {
   background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.85) 55%);
   width: 100%;
   padding: 1.2rem;
+  color: #f8fafc;
 }
 
 .project-meta h3 {
