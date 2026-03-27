@@ -4,11 +4,13 @@ function About() {
   return (
     <section>
       <h2>About Me</h2>
-      <p>I'm a problem solver who loves building usable web products. My experience includes component-driven design systems, performance optimization, and full-stack feature development.</p>
+      <div class="container-div">
+        <p>I'm a problem solver who loves building usable web products. My experience includes component-driven design systems, performance optimization, and full-stack feature development.</p>
+      </div>
       <div className="card-grid">
         <div className="card">
-          <h3>Skills</h3>
-          <p>React, TypeScript, Vite, CSS Modules, Tailwind, Figma, Node.js</p>
+          <h3>Languages</h3>
+          <p>C, C++, Python</p>
         </div>
         <div className="card">
           <h3>Experience</h3>

@@ -4,7 +4,9 @@ function Contact() {
   return (
     <section>
       <h2>Contact</h2>
-      <p>Want to collaborate or just say hello? Reach out via email or social.</p>
+      <div class="container-div">
+        <p>Want to collaborate or just say hello? Reach out via email or social.</p>
+      </div>
       <a href="/resume.pdf" target="_blank" className="btn" style={{ marginRight: '0.75rem' }}>Download Resume</a>
       <div className="card-grid" style={{ marginTop: '1.5rem' }}>
         <div className="card">

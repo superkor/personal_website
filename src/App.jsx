@@ -9,12 +9,12 @@ function App() {
     <div className="App">
       <nav>
         <div className="nav-inner container">
-          <div className="brand">Justin Chow</div>
+          <div className="brand">Justin Chow / 주효봉 </div>
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            {/* <li><a href="#about">About</a></li> */}
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact + Resume</a></li>
           </ul>
         </div>
       </nav>
@@ -24,9 +24,9 @@ function App() {
           <Home />
         </section>
 
-        <section id="about" className="container">
+        {/* <section id="about" className="container">
           <About />
-        </section>
+        </section> */}
 
         <section id="projects" className="container">
           <Projects />

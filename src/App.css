@@ -12,7 +12,7 @@
 .container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 2.5rem 1rem;
+  padding: 0 1rem;
 }
 
 nav {
@@ -98,8 +98,14 @@ section p {
 
 .hero {
   display: grid;
-  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  gap: 0;
   align-items: center;
+  padding-top: 3rem;
+}
+
+.hero .container-div {
+  margin: 0;
 }
 
 .hero h1 {
@@ -109,6 +115,17 @@ section p {
 
 .hero p {
   font-size: 1.05rem;
+}
+
+.hero img {
+  max-width: 30vw;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    max-width: 80vw;
+  }
 }
 
 .project-grid {
@@ -219,4 +236,15 @@ section p {
   .hero {
     text-align: center;
   }
+}
+
+.container-div{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.intro-div{ 
+    padding-bottom: 2rem;
 }
