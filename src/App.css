@@ -102,6 +102,9 @@ section p {
   gap: 0;
   align-items: center;
   padding-top: 3rem;
+  position: relative;
+  min-height: 100vh;
+  margin-bottom: 25ex;
 }
 
 .hero .container-div {
@@ -126,6 +129,34 @@ section p {
   .hero img {
     max-width: 60vw;
   }
+}
+
+.scroll-prompt {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: none;
+  border: none;
+  color: #38bdf8;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-prompt:hover {
+  transform: translateX(-50%) scale(1.3);
+  color: #6366f1;
+}
+
+.scroll-prompt:active {
+  transform: translateX(-50%) scale(1.15);
 }
 
 .project-grid {
@@ -246,5 +277,5 @@ section p {
 }
 
 .intro-div{ 
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
