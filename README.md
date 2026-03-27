@@ -19,3 +19,7 @@ A static personal website built with React and Vite.
    npm run build
    ```
 
+4. Run http-server:
+    ```
+    http-server dist -p 8080 -a 0.0.0.0
+    ```
