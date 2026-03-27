@@ -2,29 +2,29 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    subtitle: 'A modern e-commerce platform built with React and Stripe',
+    title: 'Project 1',
+    subtitle: 'Description',
     image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1300&q=80',
     view: '#',
     github: '#'
   },
   {
-    title: 'AI Chat Application',
-    subtitle: 'Real-time chat application powered by OpenAI',
+    title: 'Project 2',
+    subtitle: 'Description',
     image: 'https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1300&q=80',
     view: '#',
     github: '#'
   },
   {
-    title: 'Task Management',
-    subtitle: 'Collaborative task management tool with real-time updates',
+    title: 'Project 3',
+    subtitle: 'Description',
     image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1300&q=80',
     view: '#',
     github: '#'
   },
   {
-    title: 'Portfolio Generator',
-    subtitle: 'Dynamic portfolio generator for developers',
+    title: 'Project 4',
+    subtitle: 'Description',
     image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1300&q=80',
     view: '#',
     github: '#'

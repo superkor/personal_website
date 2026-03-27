@@ -1,0 +1,14 @@
+{
+  "en": {
+    "title": "Hi, I am Justin Chow!",
+    "description": "I am in my final year of a Computer Engineering degree with a specialization in Signal Processing and Communications at the University of Waterloo. I am also an upcoming Master's student at the University of Toronto. I have experience in embedded systems and software development. I enjoy designing systems and solving problems! I am interested in communications and networks, particularly how they can be used in off-grid remote locations.",
+    "cta": "Explore My Projects!",
+    "toggleLabel": "한국어"
+  },
+  "ko": {
+    "title": "안녕하세요, 저는 주효봉입니다!",
+    "description": "I am in my final year of a Computer Engineering degree with a specialization in Signal Processing and Communications at the University of Waterloo. I have experience in embedded systems and software development. I enjoy designing systems and solving problems! I am interested in communications and networks, particularly how they can be used in off-grid remote locations.",
+    "cta": "Explore My Projects!",
+    "toggleLabel": "English"
+  }
+}
