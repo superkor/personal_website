@@ -2,6 +2,8 @@
 
 A static personal website built with React and Vite.
 
+Hosted on https://chowhjustin.ca
+
 ## Getting Started
 
 1. Install dependencies:
