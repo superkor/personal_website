@@ -1,30 +1,81 @@
 [
-  {
-    "title": "Project 1",
-    "subtitle": "Description",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1300&q=80",
-    "view": "#",
-    "github": "#"
-  },
-  {
-    "title": "Project 2",
-    "subtitle": "Description",
-    "image": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=1300&q=80",
-    "view": "#",
-    "github": "#"
-  },
-  {
-    "title": "Project 3",
-    "subtitle": "Description",
-    "image": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1300&q=80",
-    "view": "#",
-    "github": "#"
-  },
-  {
-    "title": "Project 4",
-    "subtitle": "Description",
-    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1300&q=80",
-    "view": "#",
-    "github": "#"
-  }
+    {
+        "title": "BotChain",
+        "subtitle": "User-Defined Modular Robotics",
+        "image": "lobster.jpg",
+        "view": "#",
+        "github": "https://github.com/BotChain-Robots",
+        "info": [
+            "Conceived and deployed OSI Layer 1 and 2 protocols in C++ for wired communication between ESP32-S3 microcontrollers, enabling real-time user-defined robotic control from a WiFi-connected remote PC",
+            "Implemented Manchester and NRZ-I encoding using the ESP32-S3 RMT API in C++, achieving >7 Mib/s average throughput with <1% packet corruption and <= 30 ms latency",
+            "Integrated Routing Information Protocol (RIP) for dynamic routing and automatic topology discovery, enabling plug-and-play networking for multiple robots",
+            "Built a Python wrapper for a custom C++ control library, significantly reducing development time and improving accessibility for end users",
+            "Realized a Unity UI to visualize robot topology, define motion sequences, and store them in ESP32 NVS for autonomous execution without a PC",
+            "Engineered a custom protocol for storing, reading, and exeucting preprogrammed movement sets, with Flatbuffers, to allow a robot to autonomously detect its own topology and send movement commands, eliminating the need for PC control",
+            "Added SX1276 LoRA transceiver support for long-range RC control, eliminating 2.4 GHz interference and enabling reliable extended-range operation",
+            {
+                "text": "Presented at the University of Waterloo's 2026 ECE Capstone Symposium",
+                "links": [
+                    {
+                        "label": "University of Waterloo's 2026 ECE Capstone Symposium",
+                        "url": "https://uwaterloo.ca/capstone-design/project-abstracts/2026-capstone-design-projects/2026-electrical-and-computer-engineering-capstone-designs#2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Windows 2D Game Framework",
+        "subtitle": "A C++ framework for building 2D games on Windows",
+        "image": "",
+        "view": "#",
+        "github": "https://github.com/superkor/2DFramework",
+        "info": [
+            "Developed a custom game framework and rendering engine in C++ using Windows API, Windows GDI, and Direct2D, optimizing 2D graphics rendering and game mechanics",
+            "Leveraged Direct2D and Windows APIs to implement advanced rendering techniques, improving performance and visual fidelity across game scenes"
+        ]
+    },
+    {
+        "title": "Loo Programming Language",
+        "subtitle": "A simple statically typed compiled programming language",
+        "image": "",
+        "view": "#",
+        "github": "https://github.com/superkor/loo",
+        "info": [
+            "Constructed a statically typed compiled programming language using C++, implementing a custom lexer, parser, and AST-based compiler backend to produce x86-64 assembly for Linux",
+            "Implemented key language features including control flow, typing rules, and expression evaluation; developed semantic analysis and code generation to guarantee correctness and performance of compiled programs"
+        ]
+    },
+    {
+        "title": "Real Time Operating System",
+        "subtitle": "Creating a RTOS for an STM32 microcontroller",
+        "image": "",
+        "view": "#",
+        "github": "#",
+        "info": [
+            "Built a RTOS for an STM32 microcontroller in C, implementing core OS components including a buddy dynamic memory allocator, EDF task scheduler, and SVC calls to enable kernel/user mode separation and syscall handling",
+            "Validated functionality and reliability by designing and running comprehensive unit and E2E tests in C, ensuring task scheduling correctness, memory safety, and stable system operation under edge cases"
+        ]
+    },
+    {
+        "title": "Verilog Memory System and Tester",
+        "subtitle": "",
+        "image": "",
+        "view": "#",
+        "github": "#",
+        "info": [
+            "Synthesized an emulated 256 B memory system and tester in Verilog, with 8 bit wide read/write address and data",
+            "Developed comprehensive functional testbenches to validate timing, data integrity, and edge-case behavior across synchronous read/write operations"
+        ]
+    },
+    {
+        "title": "VHDL Compiler",
+        "subtitle": "",
+        "image": "",
+        "view": "#",
+        "github": "#",
+        "info": [
+            "Developed a VHDL-to-logic-gate compiler in Java, translating VHDL source into logic gate diagrams (SVG) and corresponding bitstring representations—demonstrating compiler design, parsing, and digital logic synthesis skills"
+        ]
+    }
 ]

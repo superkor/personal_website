@@ -1,0 +1,24 @@
+[
+    {
+        "title": "University of Toronto",
+        "subtitle": "(Upcoming) Master's of Applied Science - Electrical and Computer Engineering",
+        "image": "logos/uoft.jpg",
+        "location": "Toronto, Ontario",
+        "info": [],
+        "start": "Sept 2026",
+        "end": ""
+    },
+    {
+        "title": "University of Waterloo",
+        "subtitle": "Bachelor's of Applied Science - Computer Engineering Honours, Co-operative Program",
+        "image": "logos/uw.png",
+        "location": "Waterloo, Ontario",
+        "info": [
+            "Signal Processing and Communications Specialization with 3.9 CPA",
+            "2026: Gerry Heckman Scholarship Recipient",
+            "2021: President's Scholarship Recipient"
+        ],
+        "start": "2021",
+        "end": "April 2026"
+    }
+]

@@ -6,8 +6,19 @@
         "end": "April 2026",
         "location": "Waterloo, Canada",
         "info": [
-            "Developed a scalable Python-based multi-radar signal processing system for synchronized acquisition and visualization of Infineon BTG60TR13C mmWave data, integrated into a non-invasive glucose monitoring prototype; Presented at IEEE AP-S/URSI 2025 Conference",
-            "Built an multi-mmWave radar based fall detection system with Luneburg Lens for expanded coverage and accuracy; optimized power and processing. Achieved 3rd place globally in IEEE AP-S Student Design Competition",
+            {
+                "text": "Developed a scalable Python-based multi-radar signal processing system for synchronized acquisition and visualization of Infineon BTG60TR13C mmWave data, integrated into a non-invasive glucose monitoring prototype; Presented at IEEE AP-S/URSI 2025 Conference",
+                "links": [
+                    { "label": "IEEE AP-S/URSI 2025 Conference", "url": "https://ieeexplore.ieee.org/document/11266204/" }
+                ]
+            },
+            {
+                "text": "Built an multi-mmWave radar based fall detection system with Luneburg Lens for expanded coverage and accuracy; optimized power and processing. Achieved 3rd place globally in IEEE AP-S Student Design Competition",
+                "links": [
+                    { "label": "IEEE AP-S Student Design Competition", "url": "https://2025.ieee-aps.org/student-design-competition/" },
+                    { "label": "3rd place globally", "url": "https://ieeeaps.org/awards/ap-s-student-awards/ap-s-student-design-contest-winners"}
+                ]
+            },
             "Refactored and optimized radar data analysis program by successfully converting a Python-based radar analysis program to C++ using TensorFlow C and xTensor, achieving at least a 50% reduction in execution time and significantly improving computational efficiency",
             "Developed a 5G-enabled leak sensor by configuring 5G band locking with AT commands on a Nordic Thingy:91 microcontroller and reviewing C starter code for system integration",
             "Expanded on the original Python multi-radar project by implementing UDP server on Infineon XENSIV microcontroller to wirelessly send radar data to a PC using C++ and Python, allowing for low-cost deployment of radar sensors in LTC homes"

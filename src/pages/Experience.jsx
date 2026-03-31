@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import experiences from '../data/experiences.json'
+import experiences from '../data/experiences.json';
+import RichText from '../components/RichText';
 
 function Experience(){
     const [flipped, setFlipped] = useState(Array(experiences.length).fill(false));
@@ -37,7 +38,7 @@ function Experience(){
                             {experience.info && experience.info.length > 0 ? (
                                 <ul>
                                     {experience.info.map((item, idx) => (
-                                        <li key={idx}>{item}</li>
+                                        <li key={idx}><RichText item={item} /></li>
                                     ))}
                                 </ul>
                             ) : (

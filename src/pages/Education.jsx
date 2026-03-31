@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import projects from '../data/projects.json';
+import education from '../data/education.json';
 import RichText from '../components/RichText';
 
-function Projects() {
-    const [flipped, setFlipped] = useState(Array(projects.length).fill(false));
+function Education() {
+    const [flipped, setFlipped] = useState(Array(education.length).fill(false));
 
     return (
         <section>
-            <h2>Projects</h2>
+            <h2>Education</h2>
             <div class="container-div">
-                <p>Click a project to see more details!</p>
+                <p>Click an institution to see more details!</p>
             </div>
             <div className="project-grid">
-                {projects.map((project, i) => (
+                {education.map((institution, i) => (
                     <article
                         key={i}
                         className="project-tile"
@@ -25,22 +25,19 @@ function Projects() {
                         <div className={`project-inner ${flipped[i] ? 'flipped' : ''}`}>
                             <div
                                 className="project-front"
-                                style={{ backgroundImage: `linear-gradient(rgba(8,15,30,0.45), rgba(8,15,30,0.45)), url(${project.image})` }}
+                                style={{ backgroundImage: `linear-gradient(rgba(8,15,30,0.45), rgba(8,15,30,0.45)), url(${institution.image})` }}
                             >
                                 <div className="project-meta">
-                                    <h3>{project.title}</h3>
-                                    <p>{project.subtitle}</p>
-                                    <div className="project-actions">
-                                        {project.view !== "#" && <a href={project.view} className="btn">View Project</a>}
-                                        {project.github !== "#" && <a href={project.github} className="btn" style={{ background: 'rgba(15, 23, 42, 0.85)', border: '1px solid rgba(148, 163, 184, 0.35)' }}>View on GitHub</a>}
-                                    </div>
+                                    <h3>{institution.title}</h3>
+                                    <a href={institution.institution_url}>{institution.subtitle}</a>
+                                    <p>{institution.start} {institution.end !== "" && `\u2013 ${institution.end}`}</p>
                                 </div>
                             </div>
                             <div className="project-back">
                                 <div className="project-back-inner">
-                                    {project.info && project.info.length > 0 ? (
+                                    {institution.info && institution.info.length > 0 ? (
                                         <ul>
-                                            {project.info.map((item, idx) => (
+                                            {institution.info.map((item, idx) => (
                                                 <li key={idx}><RichText item={item} /></li>
                                             ))}
                                         </ul>
@@ -57,4 +54,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default Education;
