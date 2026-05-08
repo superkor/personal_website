@@ -1,3 +1,5 @@
+Moved to https://git.chowhjustin.ca/superkor/personal_website
+
 # Personal Website
 
 A static personal website built with React and Vite.
